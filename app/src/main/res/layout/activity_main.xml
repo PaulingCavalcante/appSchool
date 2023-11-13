@@ -6,4 +6,95 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="35dp"
+        android:text="Nome:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtIdade"
+        app:layout_constraintEnd_toStartOf="@+id/edtNome"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:text="Idade:"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edtIdade"
+        app:layout_constraintEnd_toStartOf="@+id/edtNome" />
+
+    <TextView
+        android:id="@+id/txtEscola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="223dp"
+        android:layout_marginEnd="16dp"
+        android:text="Escola:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/edtEscola"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtNome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtNome" />
+
+    <EditText
+        android:id="@+id/edtIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Idade"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edtEscola"
+        app:layout_constraintStart_toEndOf="@+id/txtIdade" />
+
+    <EditText
+        android:id="@+id/edtEscola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Escola"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtEscola"
+        app:layout_constraintStart_toStartOf="@+id/edtIdade" />
+
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="145dp"
+        android:text="Consultar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEscola" />
+
+    <TextView
+        android:id="@+id/txtErro"
+        android:layout_width="358dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConsultar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
